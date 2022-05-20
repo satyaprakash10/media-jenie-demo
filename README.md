@@ -7,12 +7,11 @@ This is a demo website template based on Media jenie UI&amp;UX
 
 
 
-##Project Setup
+## Project Setup & to start local development 
 - clone project 
 - npm install
-
-
-## to start development locally
+- git checkout master branch
+- git pull origin master
 - npm run dev
 
 
