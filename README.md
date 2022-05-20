@@ -1,7 +1,51 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+# media-jenie-demo
+This is a demo website template based on Media jenie UI&amp;UX
+
+
+
+## Project Setup & to start local development 
+- clone project 
+- npm install
+- git checkout master branch
+- git pull origin master
+- npm run dev
+
+
+
+### Project Summary:
+
+-- This project is based on MEDIAJENIE UI&UX agency design.
+-- project developed in Vue js (Vue 3) verison.
+
+
+## STACK
+-- Vue 3
+-- Tailwind Css (UI)
+-- Hero Icons
+-- Headless UI
+-- Bootstrap Css
+-- Custom css
+
+## Project Development duration:
+-- Project tooks 6 hours to develop in terms of complete feature and functionality along with UI design.
+-- In order to maintain Quality of design based on style to represent better responsive version apart of each verion of device in terms of AGILE development.
+-- Moreover all these changes has been developed under vue js with manual javascript logic as well as some of the vue library.
+
+
+
+## Project Feature:
+-- UI web design
+-- Responsive version
+-- Mobile first responsive design
+-- Dynamic functionality
+-- Reusability code along with its global comonents 
+-- clean and Optimized code
+-- Agile development
+-- Maintain folder structure & Naming convention for files and classes as well attributes for local state variable.
+
+
+## Thank you!
