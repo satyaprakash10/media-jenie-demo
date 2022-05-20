@@ -1,5 +1,5 @@
 <template>
-  <div class="relative py-10 xl:py-20">
+  <div class="relative w-full py-10 xl:max-w-7xl xl:mx-auto">
     <div class="flex justify-center">
       <div
         class="absolute -top-8"
@@ -14,17 +14,19 @@
       </div>
     </div>
 
-    <div class="justify-between px-6 mt-10 xl:flex xl:mt-20 xl:px-12">
+    <div
+      class="items-center justify-between px-6 mt-10 xl:flex xl:mt-20 xl:px-12"
+    >
       <div>
         <h6
           data-aos="fade-down"
           data-aos-duration="1000"
-          class="text-base font-semibold leading-relaxed xl:text-xl feature-text"
+          class="text-base font-semibold leading-relaxed xl:text-2xl feature-text"
         >
           CASE STUDY
         </h6>
         <p
-          class="pt-6 text-xl font-semibold xl:text-2xl"
+          class="pt-6 text-xl font-semibold xl:text-3xl"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
@@ -67,15 +69,17 @@
         </div>
       </div>
 
-      <div class="items-center xl:space-x-16 xl:flex">
+      <div class="gap-8 xl:flex">
         <div class="hidden xl:block">
           <img
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500"
+            width="400"
+            height="398"
             src="../../assets/images/work/work-web-04.png"
-            class="web-img"
-            alt=""
+            class="w-full sm:auto"
+            alt="Man"
           />
         </div>
 
@@ -84,10 +88,12 @@
             <img
               data-aos="fade-up"
               data-aos-easing="linear"
+              width="260"
+              height="260"
               data-aos-duration="1500"
               src="../../assets/images/work/work-web-05.png"
-              class="w-64 h-64"
-              alt=""
+              class=""
+              alt="Women"
             />
           </div>
           <div class="mt-4">
@@ -100,7 +106,7 @@
               ARTICLE
             </h6>
             <p
-              class="pt-2 text-xl font-semibold xl:text-2xl"
+              class="pt-2 text-xl font-semibold xl:text-xl"
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="1000"
@@ -199,7 +205,6 @@ import RightArrowIcon from '../../components/icons/RightArrowIcon.vue'
 }
 
 .web-img {
-  width: 400px;
   height: 398px;
 }
 

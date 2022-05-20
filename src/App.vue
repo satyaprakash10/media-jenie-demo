@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-hidden body">
+  <div class="overflow-x-hidden bg-gray-100 body">
     <!-- The site Navbar -->
     <HeaderSection />
 
@@ -35,8 +35,4 @@ import ViewMoreWork from '../src/assets/views/ViewMoreWork.vue'
 import FooterSection from '../src/assets/views/FooterSection.vue'
 </script>
 
-<style scoped lang="css">
-.body {
-  background: #e5e5e5;
-}
-</style>
+<style scoped lang="css"></style>

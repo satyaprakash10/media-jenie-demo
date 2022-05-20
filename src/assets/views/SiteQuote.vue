@@ -1,9 +1,9 @@
 <template>
   <div
-    class="px-6 py-8 pt-20 text-base border-b border-gray-300 md:pt-0 xl:text-lg xl:pl-64 lg:text-left xl:px-0 xl:py-16"
+    class="w-full px-6 py-8 mx-auto text-base border-b border-gray-300 pt-28 md:pt-0 xl:text-lg max-w-7xl lg:text-left xl:px-0 xl:py-16"
   >
     <h3
-      class="text-base leading-loose quote-info xl:text-2xl sm:text-lg"
+      class="text-base font-medium leading-loose quote-info xl:text-3xl sm:text-lg"
       data-aos-duration="1000"
       data-aos-once="false"
       data-aos="zoom-out-right"
@@ -18,7 +18,6 @@
 
 <style scoped>
 .quote-info {
-  font-family: Font Poppins;
   font-weight: 500;
   color: #000000;
 }

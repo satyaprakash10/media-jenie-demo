@@ -4,12 +4,13 @@
     <div>
       <img
         src="../assets/images/site-cover-img.png"
-        class="hidden w-full xl:block"
+        class="hidden w-full bg-center bg-no-repeat bg-cover xl:block"
         alt=""
+        style="height: 645px"
       />
       <img
         src="../assets/images/site-cover-img.png"
-        class="block w-full bg-cover xl:hidden"
+        class="block w-full bg-contain xl:hidden"
         style="height: 400px"
         alt=""
       />
@@ -63,24 +64,7 @@
     <transition name="slide">
       <div class="top-0 z-40 menu-overlay" v-if="isMobileMenu">
         <div class="overlay-menu-content">
-          <div
-            class="flex items-center justify-between px-4 pt-4 xl:px-12 xl:pt-8"
-          >
-            <div class="cursor-pointer">
-              <SiteLogo
-                class="w-8 h-8 text-white xl:w-auto xl:h-auto"
-                data-aos="fade-down"
-                data-aos-duration="2000"
-              />
-              <div
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                class="px-3 font-sans text-base font-bold text-white xl:-mt-2 hover:text-yellow-400 xl:text-2xl"
-              >
-                Media Jenie
-              </div>
-            </div>
-
+          <div class="flex items-center justify-end px-4 pt-4 xl:px-12 xl:pt-8">
             <div class="flex justify-end">
               <button
                 data-aos-duration="2000"
@@ -89,69 +73,55 @@
                 class="-mt-2 transition-all duration-500 ease-in-out transform hover:shadow-2xl"
               >
                 <HumburgerIcon
-                  class="w-10 h-10 transition-all duration-500 rounded-full cursor-pointer xl:w-auto xl:h-auto hover:bg-yellow-600 hover:rounded-full transform-gpu"
+                  class="w-10 h-10 text-yellow-400 transition-all duration-500 bg-black rounded-full cursor-pointer xl:w-auto xl:h-auto hover:bg-black hover:rounded-full transform-gpu"
                   v-if="!isMobileMenu"
                 />
                 <XIcon
                   v-else
-                  class="w-10 h-10 p-1 transition-all duration-700 bg-yellow-400 rounded-full cursor-pointer hover:rotate-180 xl:w-14 xl:h-14"
+                  class="w-10 h-10 p-1 text-yellow-400 transition-all duration-700 bg-black rounded-full cursor-pointer hover:rotate-180 xl:w-14 xl:h-14"
                 />
               </button>
             </div>
           </div>
           <!-- Menu items content -->
           <header>
-            <div class="px-10 py-10 xl:px-20 xl:py-20">
-              <h1
-                data-aos="zoom-in-right"
-                data-aos-duration="2000"
-                class="flex items-center justify-center text-xl font-bold leading-relaxed text-center text-yellow-400 xl:justify-end xl:text-right md:text-2xl xl:text-5xl"
-              >
-                Media Jenie |
-                <span
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  class="text-base font-bold text-white md:text-xl xl:text-3xl"
-                >
-                  Digital Media Agency
-                </span>
-              </h1>
-              <div class="mt-10 xl:mt-20">
-                <ul class="p-0 pt-0 space-y-10 list-none topBotomBordersOut">
+            <div class="px-10 py-10 xl:px-20 xl:py-24">
+              <div class="py-40 mt-10 xl:py-0 xl:mt-20">
+                <ul class="p-0 pt-0 list-none xl:space-y-6 topBotomBordersOut">
                   <li
                     data-aos="zoom-in-right"
                     data-aos-duration="2000"
-                    class="py-4 text-xl font-bold text-center text-white transition-all duration-500 ease-in cursor-pointer xl:w-96 xl:text-left md:text-xl xl:text-5xl hover:text-yellow-400"
+                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
                   >
-                    Home
+                    Services
                   </li>
                   <li
                     data-aos="zoom-in-left"
                     data-aos-duration="2000"
-                    class="py-4 text-xl font-bold text-center text-white transition-all duration-500 ease-in cursor-pointer xl:w-96 xl:text-left md:text-xl xl:text-5xl hover:text-yellow-400"
+                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
                   >
-                    About
+                    Our Work
                   </li>
                   <li
                     data-aos="zoom-in-right"
                     data-aos-duration="2000"
-                    class="py-4 text-xl font-bold text-center text-white transition-all duration-500 ease-in cursor-pointer xl:w-96 xl:text-left md:text-xl xl:text-5xl hover:text-yellow-400"
+                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
                   >
                     Portfolio
                   </li>
                   <li
                     data-aos="zoom-in-left"
                     data-aos-duration="2000"
-                    class="py-4 text-xl font-bold text-center text-white transition-all duration-500 ease-in cursor-pointer xl:w-96 xl:text-left md:text-xl xl:text-5xl hover:text-yellow-400"
+                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
                   >
-                    Contact Us
+                    About Us
                   </li>
                   <li
                     data-aos="zoom-in-right"
                     data-aos-duration="2000"
-                    class="py-4 text-xl font-bold text-center text-white transition-all duration-500 ease-in cursor-pointer xl:w-96 xl:text-left md:text-xl xl:text-5xl hover:text-yellow-400"
+                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
                   >
-                    Support
+                    Resources
                   </li>
                 </ul>
               </div>
@@ -186,8 +156,7 @@ onMounted(() => {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #fdcb03;
   overflow-x: hidden;
 }
 
@@ -202,7 +171,7 @@ onMounted(() => {
 }
 
 .slide-enter-active {
-  transform: translateY(-200);
+  transform: translateX(2000);
   opacity: 1;
   transition: all 0.9s ease-in-out;
 }
@@ -214,7 +183,7 @@ onMounted(() => {
 
 .slide-enter-from,
 .slide-leave-to {
-  transform: translateY(-700px);
+  transform: translateX(2000px);
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
@@ -224,9 +193,13 @@ ul.topBotomBordersOut li:before,
 ul.topBotomBordersOut li:after {
   position: absolute;
   left: 0px;
+  right: 0px;
   width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
   height: 2px;
-  background: #fff;
+  background: white;
   content: '';
   opacity: 0;
   transition: all 0.3s;

@@ -1,5 +1,7 @@
 <template>
-  <div class="px-6 pt-4 xl:pt-8 pb-18 xl:pb-20 xl:pl-64 xl:px-0">
+  <div
+    class="w-full px-6 pt-10 mx-auto xl:pt-8 max-w-7xl pb-18 xl:pb-20 xl:px-0"
+  >
     <h1
       data-aos-duration="1000"
       data-aos-once="false"
@@ -9,7 +11,7 @@
       CAPABILITIES
     </h1>
 
-    <div class="pt-6 xl:pt-11">
+    <div class="pt-6 xl:pt-11" @click="isShowStrategy === false">
       <h6
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
@@ -56,7 +58,7 @@
       </Transition>
     </div>
 
-    <div class="pt-8">
+    <div class="pt-8" @click="isShowDesign === false">
       <h6
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
@@ -199,7 +201,7 @@
       </Transition>
     </div>
 
-    <div class="pt-8">
+    <div class="pt-8 pb-8">
       <h6
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
