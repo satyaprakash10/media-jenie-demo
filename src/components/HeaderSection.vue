@@ -1,159 +1,165 @@
 <template>
-  <div class="relative">
-    <!-- Site Main header  -->
-    <div>
-      <img
-        src="../assets/images/site-cover-img.png"
-        class="hidden w-full bg-center bg-no-repeat bg-cover xl:block"
-        alt=""
-        style="height: 645px"
-      />
-      <img
-        src="../assets/images/site-cover-img.png"
-        class="block w-full bg-contain xl:hidden"
-        style="height: 400px"
-        alt=""
-      />
-
-      <div class="absolute inset-0 top-48 md:top- xl:top-1/2">
-        <h1
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-delay="50"
-          data-aos-easing="ease-in-out"
-          class="text-xl font-semibold text-center text-white sm:text-2xl xl:text-5xl"
-        >
-          5 Vaishnavi Estate
-        </h1>
-        <h6
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          class="mt-3 text-base font-semibold text-center text-white xl:text-xl"
-        >
-          Content Production
-        </h6>
-      </div>
-    </div>
-
-    <!-- Site Logo and Menu Icon -->
-    <div class="absolute top-0 left-0 right-0 xl:px-8">
-      <div class="flex items-center justify-between px-4 pt-4 xl:px-12 xl:pt-8">
-        <div data-aos="fade-right" data-aos-duration="1000">
-          <SiteLogo />
-        </div>
+  <nav class="relative navbar navbar-inverse">
+    <div class="">
+      <!-- Site Logo and Menu Icon -->
+      <div class="absolute top-0 left-0 right-0 mx-auto max-w-7xl">
         <div
-          class="flex justify-end"
-          data-aos="fade-left"
-          data-aos-duration="1000"
+          class="flex items-center justify-between px-4 pt-4 xl:px-12 xl:pt-8"
         >
-          <button @click="isMobileMenu = !isMobileMenu" class="">
-            <HumburgerIcon
-              class="transition-all ease-in-out rounded-full shadow-lg cursor-pointer duration-900 hover:shadow-2xl"
-              v-if="!isMobileMenu"
-            />
-            <XIcon
-              v-else
-              class="p-1 transition-all duration-1000 bg-yellow-400 rounded-full cursor-pointer hover:rotate-180 w-14 h-14"
-            />
-          </button>
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <SiteLogo />
+          </div>
+          <div
+            class="flex justify-end"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <button @click="isMobileMenu = !isMobileMenu" class="">
+              <HumburgerIcon
+                class="transition-all ease-in-out rounded-full shadow-lg cursor-pointer duration-900 hover:shadow-2xl"
+                v-if="!isMobileMenu"
+              />
+              <XIcon
+                v-else
+                class="p-1 transition-all duration-1000 bg-yellow-400 rounded-full cursor-pointer hover:rotate-180 w-14 h-14"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Menu Item Container Overlay -->
-    <transition name="slide">
-      <div class="top-0 z-40 menu-overlay" v-if="isMobileMenu">
-        <div class="overlay-menu-content">
-          <div class="flex items-center justify-end px-4 pt-4 xl:px-12 xl:pt-8">
-            <div class="flex justify-end">
-              <button
-                data-aos-duration="2000"
-                data-aos="zoom-in-up"
-                @click="isMobileMenu = !isMobileMenu"
-                class="-mt-2 transition-all duration-500 ease-in-out transform hover:shadow-2xl"
-              >
-                <HumburgerIcon
-                  class="w-10 h-10 text-yellow-400 transition-all duration-500 bg-black rounded-full cursor-pointer xl:w-auto xl:h-auto hover:bg-black hover:rounded-full transform-gpu"
-                  v-if="!isMobileMenu"
-                />
-                <XIcon
-                  v-else
-                  class="w-10 h-10 p-1 text-yellow-400 transition-all duration-700 bg-black rounded-full cursor-pointer hover:rotate-180 xl:w-14 xl:h-14"
-                />
-              </button>
+  </nav>
+  <transition name="slide">
+    <div class="top-0 h-full menu-overlay" v-if="isMobileMenu">
+      <div class="z-50 overlay-menu-content">
+        <div class="flex items-center justify-end px-4 pt-4 xl:px-12 xl:pt-8">
+          <div class="flex justify-end">
+            <button
+              data-aos-duration="2000"
+              data-aos="zoom-in-up"
+              @click="isMobileMenu = !isMobileMenu"
+              class="-mt-2 transition-all duration-500 ease-in-out transform hover:shadow-2xl"
+            >
+              <HumburgerIcon
+                class="w-10 h-10 text-yellow-400 transition-all duration-500 bg-black rounded-full cursor-pointer xl:w-auto xl:h-auto hover:bg-black hover:rounded-full transform-gpu"
+                v-if="!isMobileMenu"
+              />
+              <XIcon
+                v-else
+                class="w-10 h-10 p-1 text-yellow-400 transition-all duration-700 bg-black rounded-full cursor-pointer hover:rotate-180 xl:w-14 xl:h-14"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu items content -->
+        <header>
+          <div class="flex items-center justify-center px-10 py-40 xl:px-20">
+            <div class="py-40 xl:py-0 xl:mt-20">
+              <ul class="p-0 pt-0 list-none xl:space-y-6 topBotomBordersOut">
+                <li
+                  data-aos="zoom-in-right"
+                  data-aos-duration="2000"
+                  class="flex items-center justify-center py-2 text-4xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 xl:text-6xl"
+                >
+                  Services
+                </li>
+                <li
+                  data-aos="zoom-in-left"
+                  data-aos-duration="2000"
+                  class="flex items-center justify-center py-2 text-4xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 xl:text-6xl"
+                >
+                  Our Work
+                </li>
+
+                <li
+                  data-aos="zoom-in-left"
+                  data-aos-duration="2000"
+                  class="flex items-center justify-center py-2 text-4xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 xl:text-6xl"
+                >
+                  About Us
+                </li>
+                <li
+                  data-aos="zoom-in-right"
+                  data-aos-duration="2000"
+                  class="flex items-center justify-center py-2 text-4xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 xl:text-6xl"
+                >
+                  Resources
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- Menu items content -->
-          <header>
-            <div class="px-10 py-10 xl:px-20 xl:py-24">
-              <div class="py-40 mt-10 xl:py-0 xl:mt-20">
-                <ul class="p-0 pt-0 list-none xl:space-y-6 topBotomBordersOut">
-                  <li
-                    data-aos="zoom-in-right"
-                    data-aos-duration="2000"
-                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
-                  >
-                    Services
-                  </li>
-                  <li
-                    data-aos="zoom-in-left"
-                    data-aos-duration="2000"
-                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
-                  >
-                    Our Work
-                  </li>
-                  <li
-                    data-aos="zoom-in-right"
-                    data-aos-duration="2000"
-                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
-                  >
-                    Portfolio
-                  </li>
-                  <li
-                    data-aos="zoom-in-left"
-                    data-aos-duration="2000"
-                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
-                  >
-                    About Us
-                  </li>
-                  <li
-                    data-aos="zoom-in-right"
-                    data-aos-duration="2000"
-                    class="flex items-center justify-center py-4 text-3xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 md:text-3xl xl:text-5xl"
-                  >
-                    Resources
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </header>
-        </div>
+        </header>
       </div>
-    </transition>
-  </div>
+    </div>
+  </transition>
 </template>
 
-<script setup>
+<script>
 import SiteLogo from './icons/SiteLogo.vue'
 import HumburgerIcon from './icons/HumburgerIcon.vue'
 import { XIcon } from '@heroicons/vue/outline'
-import { ref, onMounted } from 'vue'
 import AOS from 'aos'
+export default {
+  components: { SiteLogo, HumburgerIcon, XIcon },
 
-let isShow = ref(false)
-let isMobileMenu = ref(false)
+  data() {
+    return {
+      isShow: false,
+      isMobileMenu: false,
+    }
+  },
 
-onMounted(() => {
-  AOS.init()
-})
+  methods: {},
+
+  mounted() {
+    $(window).scroll(function () {
+      if ($(document).scrollTop() > 200) {
+        $('nav').addClass('transparent ')
+      } else {
+        $('nav').removeClass('transparent')
+      }
+    })
+    AOS.init()
+  },
+}
 </script>
 
 <style scoped>
+nav.navbar {
+  -webkit-transition: all 0.4s ease;
+  animation-duration: 500ms;
+  transition: all 0.9s ease;
+  top: 0;
+}
+
+.navbar-inverse {
+  animation-duration: 500ms;
+  /* transform: translateY(10px); */
+}
+
+nav.navbar.transparent {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  transition: width 6s all 0.5 ease;
+  animation-duration: 400ms;
+  height: 100px;
+  transform: translateY(-20px);
+  box-shadow: -10px 1px 9px 0px grey;
+  background-color: white;
+}
+
+.navbar {
+  padding: 0;
+}
 .menu-overlay {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 900;
   top: 0;
   left: 0;
   background-color: #fdcb03;
@@ -167,7 +173,7 @@ onMounted(() => {
 }
 
 .cover-img {
-  height: 606px;
+  height: 100%;
 }
 
 .slide-enter-active {

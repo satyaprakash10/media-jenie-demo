@@ -1,6 +1,8 @@
 <template>
-  <div class="relative w-full py-10 xl:max-w-7xl xl:mx-auto">
-    <div class="flex justify-center">
+  <div
+    class="relative w-full px-4 py-28 xl:px-0 xl:py-28 xl:max-w-7xl xl:mx-auto"
+  >
+    <div class="flex items-center justify-center">
       <div
         class="absolute -top-8"
         data-aos="zoom-out-up"
@@ -14,27 +16,102 @@
       </div>
     </div>
 
-    <div
-      class="items-center justify-between px-6 mt-10 xl:flex xl:mt-20 xl:px-12"
-    >
-      <div>
-        <h6
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          class="text-base font-semibold leading-relaxed xl:text-2xl feature-text"
-        >
-          CASE STUDY
-        </h6>
-        <p
-          class="pt-6 text-xl font-semibold xl:text-3xl"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        >
-          How a US start-up generated 250K USD revenue in 1 year from website.
-        </p>
+    <div class="lg:flex lg:gap-6">
+      <div class="lg:w-3/4">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+          <div>
+            <h6
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              class="text-2xl font-semibold leading-relaxed xl:text-2xl feature-text"
+            >
+              CASE STUDY
+            </h6>
+            <p
+              class="pt-6 text-3xl font-semibold xl:max-w-sm xl:text-3xl"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              How a US start-up generated 250K USD revenue in 1 year from
+              website.
+            </p>
 
+            <div
+              class="flex justify-center mt-10 xl:mt-4 xl:pt-14 xl:justify-start"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <button
+                class="z-40 hidden text-base font-semibold text-black transition-all duration-500 ease-in xl:block btn hover:bg-yellow-600 hover:shadow-xl"
+              >
+                Download
+              </button>
+            </div>
+          </div>
+
+          <div class="gap-8 xl:flex">
+            <div class="">
+              <img
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                width="400"
+                height="398"
+                src="../../assets/images/work/work-web-04.png"
+                class="w-full sm:auto"
+                alt="Man"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/3">
+        <div class="hidden xl:block">
+          <img
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            width="260"
+            height="260"
+            data-aos-duration="1500"
+            src="../../assets/images/work/work-web-05.png"
+            class=""
+            alt="Women"
+          />
+        </div>
+        <div class="hidden mt-5 xl:block md:block">
+          <h6
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            class="text-2xl font-semibold leading-relaxed xl:text-2xl feature-text"
+          >
+            ARTICLE
+          </h6>
+          <p
+            class="pt-2 text-xl font-semibold xl:text-xl"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            How a US start-up generated 250K USD revenue in 1 year from website.
+          </p>
+
+          <div
+            class="mt-4"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <RightArrowIcon
+              class="overflow-hidden transition-all duration-700 ease-in-out transform cursor-pointer hover:text-yellow-400 hover:scale-x-90"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="block md:flex md:space-x-10 xl:hidden">
         <div
-          class="flex justify-center mt-4 pt-14 xl:justify-start"
+          class="flex justify-center py-10 border-b border-gray-300 xl:justify-start"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -44,87 +121,44 @@
             Download
           </button>
         </div>
-      </div>
 
-      <div class="block mt-10 md:flex md:space-x-10 xl:hidden">
-        <div class="">
-          <img
-            src="../../assets/images/work/work-web-04.png"
-            class="w-full h-96"
-            alt=""
-            data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-          />
-        </div>
-        <div class="mt-6 md:mt-0">
+        <div class="py-10 md:mt-0">
           <img
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
             src="../../assets/images/work/work-web-05.png"
-            class="w-full h-96"
+            class="w-full"
             alt=""
           />
         </div>
-      </div>
-
-      <div class="gap-8 xl:flex">
-        <div class="hidden xl:block">
-          <img
+        <div class="block xl:hidden md:hidden">
+          <h6
             data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1500"
-            width="400"
-            height="398"
-            src="../../assets/images/work/work-web-04.png"
-            class="w-full sm:auto"
-            alt="Man"
-          />
-        </div>
+            data-aos-duration="1000"
+            class="text-2xl font-semibold leading-relaxed xl:text-2xl feature-text"
+          >
+            ARTICLE
+          </h6>
+          <p
+            class="pt-2 text-xl font-semibold xl:text-xl"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            How a US start-up generated 250K USD revenue in 1 year from website.
+          </p>
 
-        <div class="">
-          <div class="hidden xl:block">
-            <img
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              width="260"
-              height="260"
-              data-aos-duration="1500"
-              src="../../assets/images/work/work-web-05.png"
-              class=""
-              alt="Women"
+          <div
+            class="mt-4"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <RightArrowIcon
+              class="overflow-hidden transition-all duration-700 ease-in-out transform cursor-pointer hover:text-yellow-400 hover:scale-x-90"
             />
-          </div>
-          <div class="mt-4">
-            <h6
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-              class="text-base font-semibold leading-relaxed xl:text-xl feature-text"
-            >
-              ARTICLE
-            </h6>
-            <p
-              class="pt-2 text-xl font-semibold xl:text-xl"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              How a US start-up generated 250K USD revenue in 1 year from
-              website.
-            </p>
-
-            <div
-              class="mt-4"
-              data-aos="fade-right"
-              data-aos-easing="linear"
-              data-aos-duration="1000"
-            >
-              <RightArrowIcon
-                class="overflow-hidden transition-all duration-700 ease-in-out transform cursor-pointer hover:text-yellow-400 hover:scale-x-90"
-              />
-            </div>
           </div>
         </div>
       </div>

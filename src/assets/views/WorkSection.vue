@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="relative w-full h-full px-6 bg-black adv-main-content xl:px-0 xl:h-auto"
-  >
+  <div class="relative w-full px-4 bg-black md :pb-20 adv-main-content">
     <div class="mx-auto max-w-7xl">
       <div
         class="relative w-full"
@@ -10,14 +8,14 @@
         data-aos-duration="1000"
       >
         <h2
-          class="text-3xl font-bold text-white pt-7 md:text-5xl sm:text-4xl lg:text-7xl xl:text-9xl"
+          class="text-3xl font-bold text-white pt-7 md:text-8xl sm:text-5xl lg:text-9xl xl:text-9xl"
         >
           WORK
         </h2>
       </div>
 
       <div
-        class="relative grid w-full grid-cols-1 gap-8 mt-10 xl:gap-16 md:grid-cols-2 xl:grid-cols-3"
+        class="relative grid grid-cols-1 gap-16 mt-8 lg:grid-cols-3 sm:grid-cols-2 md:gap-20"
       >
         <div class="relative transition-all duration-500 group">
           <div
@@ -27,8 +25,10 @@
             data-aos-easing="ease-in-sine"
           >
             <img
+              width="388"
+              height="319"
               src="../../assets/images/work/mj-work-web-01.png"
-              class="w-full h-full overflow-hidden transition-all duration-700 transform cursor-pointer xl:w-96 xl:h-80 xl:group-hover:scale-90 group-hover:scale-110"
+              class="w-full overflow-hidden transition-all duration-700 transform cursor-pointer sm:w-auto xl:group-hover:scale-90 group-hover:scale-110"
               alt=""
             />
             <div class="mt-4" data-aos="fade-up" data-aos-duration="1000">
@@ -57,8 +57,10 @@
             data-aos-easing="ease-in-sine"
           >
             <img
+              width="388"
+              height="319"
               src="../../assets/images/work/mj-work-web-02.png"
-              class="w-full h-full overflow-hidden transition-all duration-700 transform cursor-pointer xl:w-96 xl:h-80 xl:group-hover:scale-90 group-hover:scale-110"
+              class="w-full overflow-hidden transition-all duration-700 transform cursor-pointer sm:w-auto xl:group-hover:scale-90 group-hover:scale-110"
               alt=""
             />
             <div class="mt-4" data-aos="fade-up" data-aos-duration="1000">
@@ -87,8 +89,10 @@
             data-aos-easing="ease-in-sine"
           >
             <img
+              width="388"
+              height="319"
               src="../../assets/images/work/mj-work-web-03.png"
-              class="w-full h-full overflow-hidden transition-all duration-700 transform cursor-pointer xl:w-96 xl:h-80 xl:group-hover:scale-90 group-hover:scale-110"
+              class="w-full overflow-hidden transition-all duration-700 transform cursor-pointer sm:w-auto xl:group-hover:scale-90 group-hover:scale-110"
               alt=""
             />
             <div class="mt-4" data-aos="fade-up" data-aos-duration="1000">

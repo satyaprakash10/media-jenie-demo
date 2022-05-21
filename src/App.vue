@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-hidden bg-gray-100 body">
+  <div class="overflow-x-hidden bg-gray-50 body">
     <!-- The site Navbar -->
     <HeaderSection />
 
