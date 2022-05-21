@@ -34,6 +34,7 @@
         </h6>
       </div>
     </div>
+
     <div class="pt-4 pb-4 xl:pb-7">
       <div class="mx-auto max-w-7xl">
         <div class="items-center mx-auto md:px-6 max-w-7xl md:flex">
@@ -48,7 +49,7 @@
           <div class="w-full xl:mx-auto xl:max-w-7xl">
             <div class="hidden md:block sm:hidden xl:block lg:block">
               <div
-                class="flex items-center justify-center w-full space-x-10 xl:space-x-24"
+                class="flex items-center justify-center w-full space-x-10 xl:pl-10 xl:space-x-24"
               >
                 <div
                   data-aos-duration="1000"

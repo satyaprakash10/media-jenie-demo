@@ -32,7 +32,10 @@
     <!-- Menu Item Container Overlay -->
   </nav>
   <transition name="slide">
-    <div class="top-0 h-full overflow-hidden menu-overlay" v-if="isMobileMenu">
+    <div
+      class="relative top-0 h-full overflow-hidden menu-overlay"
+      v-if="isMobileMenu"
+    >
       <div class="z-50 overlay-menu-content">
         <div class="flex items-center justify-end px-4 pt-4 xl:px-12 xl:pt-8">
           <div class="flex justify-end">
@@ -55,9 +58,9 @@
         </div>
 
         <!-- Menu items content -->
-        <header>
-          <div class="flex items-center justify-center px-10 py-40 xl:px-20">
-            <div class="py-40 xl:py-0 xl:mt-20">
+        <header class="md:py-20 menu-item">
+          <div class="flex items-center justify-center px-10 xl:px-20">
+            <div class="xl:py-0">
               <ul class="p-0 pt-0 list-none xl:space-y-6 topBotomBordersOut">
                 <li
                   data-aos="zoom-in-right"
@@ -225,5 +228,13 @@ ul.topBotomBordersOut li:hover:before,
 ul.topBotomBordersOut li:hover:after {
   opacity: 1;
   transform: translateY(0px);
+}
+.menu-item {
+  padding: 0%;
+}
+@media only screen and (max-width: 2988px) {
+  .menu-item {
+    padding: 12%;
+  }
 }
 </style>
