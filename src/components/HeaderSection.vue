@@ -32,7 +32,7 @@
     <!-- Menu Item Container Overlay -->
   </nav>
   <transition name="slide">
-    <div class="top-0 h-full menu-overlay" v-if="isMobileMenu">
+    <div class="top-0 h-full overflow-hidden menu-overlay" v-if="isMobileMenu">
       <div class="z-50 overlay-menu-content">
         <div class="flex items-center justify-end px-4 pt-4 xl:px-12 xl:pt-8">
           <div class="flex justify-end">
@@ -61,14 +61,14 @@
               <ul class="p-0 pt-0 list-none xl:space-y-6 topBotomBordersOut">
                 <li
                   data-aos="zoom-in-right"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   class="flex items-center justify-center py-2 text-4xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 xl:text-6xl"
                 >
                   Services
                 </li>
                 <li
                   data-aos="zoom-in-left"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   class="flex items-center justify-center py-2 text-4xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 xl:text-6xl"
                 >
                   Our Work
@@ -76,14 +76,14 @@
 
                 <li
                   data-aos="zoom-in-left"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   class="flex items-center justify-center py-2 text-4xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 xl:text-6xl"
                 >
                   About Us
                 </li>
                 <li
                   data-aos="zoom-in-right"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                   class="flex items-center justify-center py-2 text-4xl font-bold text-center text-black transition-all duration-500 ease-in cursor-pointer hover:text-indigo-600 xl:text-6xl"
                 >
                   Resources

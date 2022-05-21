@@ -45,7 +45,7 @@
             </div>
           </div>
           <div
-            class="absolute inset-0 hidden w-full h-full overflow-hidden duration-500 ease-in bg-yellow-500 opacity-0 cursor-pointer xl:block xl:h-80 xl:w-96 group-hover:opacity-100 bg-opacity-30"
+            class="absolute inset-0 hidden w-full h-full overflow-hidden duration-500 ease-in bg-yellow-500 opacity-0 cursor-pointer xl:block xl:h-80 group-hover:opacity-100 bg-opacity-30"
           ></div>
         </div>
 
@@ -77,7 +77,7 @@
             </div>
           </div>
           <div
-            class="absolute inset-0 hidden w-full h-full overflow-hidden duration-500 ease-in bg-yellow-500 opacity-0 cursor-pointer xl:block xl:h-80 xl:w-96 group-hover:opacity-100 bg-opacity-30"
+            class="absolute inset-0 hidden w-full h-full overflow-hidden duration-500 ease-in bg-yellow-500 opacity-0 cursor-pointer xl:block xl:h-80 group-hover:opacity-100 bg-opacity-30"
           ></div>
         </div>
 
@@ -109,7 +109,7 @@
             </div>
           </div>
           <div
-            class="absolute inset-0 hidden w-full h-full overflow-hidden duration-500 ease-in bg-yellow-500 opacity-0 cursor-pointer xl:block xl:h-80 xl:w-96 group-hover:opacity-100 bg-opacity-30"
+            class="absolute inset-0 hidden w-full h-full overflow-hidden duration-500 ease-in bg-yellow-500 opacity-0 cursor-pointer xl:block xl:h-80 xl96 group-hover:opacity-100 bg-opacity-30"
           ></div>
         </div>
       </div>

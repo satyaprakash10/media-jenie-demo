@@ -1,7 +1,7 @@
 <template>
   <div class="border border-b gray-300">
     <div
-      class="w-full px-4 py-16 pt-40 mx-auto text-base xl:pt-0 xl:text-lg max-w-7xl mdlg:text-left xl:px-0"
+      class="w-full px-4 py-16 pt-40 mx-auto text-base xl:pt-16 xl:text-lg max-w-7xl mdlg:text-left xl:px-0"
     >
       <h3
         class="text-3xl font-medium leading-loose quote-info xl:text-3xl sm:text-3xl md:ml-52"
